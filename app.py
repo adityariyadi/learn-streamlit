@@ -41,6 +41,9 @@ def main():
     fig3 = px.pie(df3, values='Sum', names='lang', title='Pie chart')
     st.plotly_chart(fig3)
 
+    fig4 = px.bar(df3, x='lang', y='Sum')
+    st.plotly_chart(fig4)
+
 
 if __name__ == '__main__':
     main()
